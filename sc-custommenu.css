@@ -198,6 +198,11 @@ button[aria-expanded=true]{
     background-image:linear-gradient(to top, rgba(255, 255, 255, 0) 83.19%, rgba(0, 0, 0, 0.2))
     color:darkgoldenrod;
 } 
+.btn-check:focus+.btn, .btn:focus{
+    outline: none;
+    box-shadow:0 0 0 .25rem rgb(253 184 13 / 25%);
+}
+
 
 .btn[aria-expanded=true]{
     color:var(--ochre);
