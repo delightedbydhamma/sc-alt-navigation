@@ -170,10 +170,9 @@ root, chapterid{
     line-height:22px
     
 }
-.second root, .second chapterid{
-    
+.scc-links .fourth root{
+    font-size: 12px;
 }
-
 
 
 
@@ -185,11 +184,10 @@ root, chapterid{
     border-top: 1px solid rgba(0,0,0,.05);
     width: 100%;
     font-weight: 400;
-/*    text-transform: uppercase;*/
-padding-left: var(--padding-sm);
-
-
+    padding-left: var(--padding-sm);
 }
+
+
 button[aria-expanded=false]{
     background: transparent;
 } 
@@ -200,7 +198,8 @@ button[aria-expanded=true]{
 } 
 .btn-check:focus+.btn, .btn:focus{
     outline: none;
-    box-shadow:0 0 0 .25rem rgb(253 184 13 / 25%);
+/*    box-shadow:0 0 0 .25rem rgb(253 184 13 / 25%);*/
+box-shadow: none;
 }
 
 
@@ -246,8 +245,13 @@ button[aria-expanded=true]{
 }
 .second li, .second li a{
     font-size: 20px;
+    line-height: 25px;
     font-weight: 300; 
 }
+.second root{
+    line-height: 25px;
+}
+
 .second li{
     padding:5px 0;
 }
@@ -286,8 +290,9 @@ button[aria-expanded=true]{
     border-bottom:1px solid #fff;
 }
 
-.third li .third li a{
+.third li, .third li a{
     font-size: 18px;
+    line-height: 20px;
     font-weight: 500;    
 }
 .third a{
@@ -328,9 +333,12 @@ button[aria-expanded=true]{
     width: 100% ;
 }
 .fifth li{
-    padding:5px 0;
+    padding:5px 5px;
 }
-
+.fifth li:hover{
+    box-shadow: inset -1px -1px 5px rgb(107 77 77 / 50%);
+    border-bottom-color: #999;
+}
 
 
 .text-group li{
@@ -385,19 +393,18 @@ margin-left: -16px;
 
 
 
-.scc-links .fourth root{
-    font-size: 12px;
-}
+
 span.info{
-    display: block;
+/*    display: block;*/
     width:14px;
     position: relative;
+    width: 20px;
 }
 
 .info blurb, blurb{
  visibility: hidden;
-  min-width: 320px;
-  background-color: #555;
+  width: 320px;
+  background-color: rgb(85 85 85 / 96%);
   color: #fff;
   text-align: center;
   padding: 5px 10px;
@@ -406,14 +413,15 @@ span.info{
    position: absolute;
   z-index: 1;
   bottom: 155%;
-  right: 50%;
-  margin-left: -110px;
+  left: 70%;
+  margin-left: -310px;
     /* Fade in tooltip */
   opacity: 0;
   transition: opacity 0.3s;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 100;
   text-shadow: none;
+  box-shadow: 2px 2px 30px rgb(85 85 85 / 90%);
 }
 
 /* Tooltip arrow */
@@ -421,11 +429,11 @@ span.info{
   content: "";
   position: absolute;
   top: 100%;
-  left: 50%;
+  right: 5%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent;
+  border-color: rgb(85 85 85 / 87%) transparent transparent transparent;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -437,26 +445,3 @@ span.info{
 }
 
 
-
-
-main{
-    width: 500px;
-    flex: auto;
-    display: flex;
-    columns: 4;
-}
-row{
-    grid-row: auto;
-}
-exp{column-width: 16px;
-    order: 1;}
-col1{
-    column-width:75px;
-    order:2;
-}
-col2{
-    width:75px;
-}
-col3{
-    width:75px;
-}
