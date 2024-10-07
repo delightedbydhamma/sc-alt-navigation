@@ -78,7 +78,7 @@
 				<label class="form-check-label" for="vaggaswitch">Show chapters</label>
 			</div>
 		</form>
-		<nav class=" scc-links">	
+		<nav class=" scc-links ">	
 			<ul id="threebaskets" class="first list-unstyled mb-0">
 				<li id="sutta-basket" class="second list-unstyled collapse basket"><translation>Discourses</translation><root>Suttapiṭaka</root>
 					<ul>
@@ -95,12 +95,14 @@
 					<blurb>Abhidhamma texts are systematic summaries and analyses of the teachings drawn from the earlier discourses. The Abhidhamma (spelled abhidharma in Sanskrit) is intended for advanced students who have mastered the teachings of the discourses.</blurb>
 				</li>
 			</ul>	
-			<ul id="alllanguages" class="first list-unstyled mb-0" >	
-				<li class="text-language" id="pali">
-					<button class="btn d-inline-flex align-items-left collapsed" data-bs-toggle="collapse" data-bs-target="#pali-lang" aria-expanded="false">Pāḷi</button>
-					<div  class=" language ">
+			<ul id="alllanguages" class="first list-unstyled mb-0 accordion accordion-flush" >	
+				<li class="text-language accordion-item" id="pali">
+					<h2 class="accordion-header">
+					<button class="btn d-inline-flex align-items-left collapsed accordion-button" data-bs-toggle="collapse" data-bs-target="#pali-lang" aria-expanded="false">Pāḷi</button>
+				</h2>
+					<div  class="language ">
 
-						<ul class="second list-unstyled collapse" id="pali-lang">
+						<ul class="second list-unstyled collapse accordion-collapse " id="pali-lang" data-bs-parent="#alllanguages">
 							<li class="text-type">
 								<a href="#" class="d-inline-flex btn"  data-bs-toggle="collapse" data-bs-target="#pali-discourses" aria-expanded="false">
 									<translation>Discourses</translation><root>suttas</root>
@@ -1574,10 +1576,10 @@
 					</ul>		
 				</li>
 				<!-- end pali -->
-				<li class="text-language">
-					<button class="btn d-inline-flex collapsed" data-bs-toggle="collapse" data-bs-target="#chineselang" aria-expanded="false">Chinese</button>
+				<li class="text-language accordion-item">
+					<button class="btn d-inline-flex align-items-left collapsed accordion-button" data-bs-toggle="collapse" data-bs-target="#chineselang" aria-expanded="false">Chinese</button>
 
-					<ul class="list-unstyled list-unstyled second collapse" id="chineselang" >
+					<ul class="list-unstyled list-unstyled second  accordion-collapse collapse" id="chineselang" data-bs-parent="#alllanguages">
 						<li class="text-type"><a href="#" class="d-inline-flex btn"  data-bs-toggle="collapse" data-bs-target="#chinese-discourses" aria-expanded="false"><translation>Discourses&nbsp;</translation><root>sūtra</root></a>
 							<div  id="chinese-discourses" class="collapse third">
 								<ul class="list-unstyled third">
@@ -2783,9 +2785,9 @@
 		</div>
 	</li>
 	<!-- end chinese -->
-	<li class="text-language">
-		<button class="btn d-inline-flex collapsed" data-bs-toggle="collapse" data-bs-target="#sanskritlang" aria-expanded="false">Sanskrit</button>
-		<ul id="sanskritlang" class="list-unstyled collapse second">
+	<li class="text-language accordion-item">
+		<button class="btn d-inline-flex align-items-left collapsed accordion-button" data-bs-toggle="collapse" data-bs-target="#sanskritlang" aria-expanded="false">Sanskrit</button>
+		<ul id="sanskritlang" class="list-unstyled collapse second" data-bs-parent="#alllanguages">
 			<li class="text-type">
 				<a href="#" class="d-inline-flex btn"  data-bs-toggle="collapse" data-bs-target="#san-vin" aria-expanded="false">
 					<translation>Monastic Law</translation>
@@ -3114,10 +3116,10 @@
 
 
 		<!-- end sanskrit -->			
-		<li class="text-language">
-			<button class="btn d-inline-flex collapsed" data-bs-toggle="collapse" data-bs-target="#otherlang" aria-expanded="false">Other Languages</button>
+		<li class="text-language accordion-item">
+			<button class="btn d-inline-flex align-items-left collapsed accordion-button" data-bs-toggle="collapse" data-bs-target="#otherlang" aria-expanded="false">Other Languages</button>
 
-			<ul id="otherlang"  class="list-unstyled second collapse ">
+			<ul id="otherlang"  class="list-unstyled second accordion-collapse collapse ">
 				<li class="text-type sutta otherlang"><a href="#" class="d-inline-flex btn"  data-bs-toggle="collapse" data-bs-target="#other-discourses" aria-expanded="false">
 					<translation>Discourses</translation>
 					<root>Sūtra</root>
