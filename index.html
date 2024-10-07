@@ -107,7 +107,7 @@
 								<a href="#" class="d-inline-flex btn"  data-bs-toggle="collapse" data-bs-target="#pali-discourses" aria-expanded="false">
 									<translation>Discourses</translation><root>suttas</root>
 								</a>
-								<ul class="third collapse list-unstyled" id="pali-discourses">
+								<ul class="third collapse list-unstyled accordion-button" data-bs-parent="#pali-lang" id="pali-discourses">
 									<li id="dn" class="long suttas">
 										<a href="#" class="expander" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#dn-sections">            
 											<title>expand</title>+
@@ -1012,7 +1012,7 @@
 									<translation>Theravāda Monastic Law</translation>
 									<root>Vinayapiṭaka</root>
 								</a>
-								<ul class="third collapse list-unstyled" id="pali-vin">
+								<ul class="third collapse list-unstyled accordion-button" data-bs-parent="#pali-lang" id="pali-vin">
 									<li>
 										<a href="#" class="expander"  data-bs-toggle="collapse" data-bs-target="#pli-tv" aria-expanded="false">            
 											<title>expand</title>+
@@ -1513,7 +1513,7 @@
 									<blurb>The seven books of the canonical Theravāda Abhidhamma.</blurb>
 								</a>
 							</li>
-							<ul class="list-unstyled third collapse" id="pali-abhidhamma">
+							<ul class="list-unstyled third collapse accordion-button" data-bs-parent="#pali-lang" id="pali-abhidhamma">
 								<li class="text-group">
 									<a href="https://suttacentral.net/ds" class="d-inline-flex btn">
 										<chapterid>Ds</chapterid>
@@ -1577,11 +1577,11 @@
 				</li>
 				<!-- end pali -->
 				<li class="text-language accordion-item">
-					<button class="btn d-inline-flex align-items-left collapsed accordion-button" data-bs-toggle="collapse" data-bs-target="#chineselang" aria-expanded="false">Chinese</button>
+					<button class="btn d-inline-flex align-items-left collapsed accordion-button" data-bs-toggle="collapse" data-bs-target="#chinese-lang" aria-expanded="false">Chinese</button>
 
-					<ul class="list-unstyled list-unstyled second  accordion-collapse collapse" id="chineselang" data-bs-parent="#alllanguages">
+					<ul class="list-unstyled list-unstyled second  accordion-collapse collapse" id="chinese-lang" data-bs-parent="#alllanguages">
 						<li class="text-type"><a href="#" class="d-inline-flex btn"  data-bs-toggle="collapse" data-bs-target="#chinese-discourses" aria-expanded="false"><translation>Discourses&nbsp;</translation><root>sūtra</root></a>
-							<div  id="chinese-discourses" class="collapse third">
+							<div  id="chinese-discourses" class="collapse third accordion-button" data-bs-parent="#chinese-lang">
 								<ul class="list-unstyled third">
 									<li class="text-group">
 										<a href="https://suttacentral.net/da" class="btn d-inline-flex">
@@ -1651,7 +1651,7 @@
 									<translation>Monastic Law</translation>
 									<root>Vinaya</root>
 								</a>
-								<ul class="list-unstyled third collapse" id="lzh-vin">
+								<ul class="list-unstyled third collapse  accordion-button" data-bs-parent="#chinese-lang" id="lzh-vin">
 									<li class="text-type">
 
 										<a href="#" class="expander"  data-bs-toggle="collapse" data-bs-target="#lzh-mg-vin" aria-expanded="false">
@@ -2700,7 +2700,7 @@
 						<root>Abhidhamma</root>
 						<blurb>Abhidhamma texts are systematic summaries and analyses of the teachings drawn from the earlier discourses. The Abhidhamma (spelled abhidharma in Sanskrit) is intended for advanced students who have mastered the teachings of the discourses.</blurb>
 					</a>
-					<ul  id="lzh-ab" class="collapse list-unstyled third">
+					<ul  id="lzh-ab" class="collapse list-unstyled third  accordion-button" data-bs-parent="#chinese-lang">
 						<li class="text-type">
 							<a href="#" class="expander"  data-bs-toggle="collapse" data-bs-target="#lzh-dg-ab" aria-expanded="false"> +</a>
 							<a href="https://suttacentral.net/lzh-dg-ab" class="d-inline-flex btn">
@@ -2786,15 +2786,15 @@
 	</li>
 	<!-- end chinese -->
 	<li class="text-language accordion-item">
-		<button class="btn d-inline-flex align-items-left collapsed accordion-button" data-bs-toggle="collapse" data-bs-target="#sanskritlang" aria-expanded="false">Sanskrit</button>
-		<ul id="sanskritlang" class="list-unstyled collapse second" data-bs-parent="#alllanguages">
+		<button class="btn d-inline-flex align-items-left collapsed accordion-button" data-bs-toggle="collapse" data-bs-target="#sanskrit-lang" aria-expanded="false">Sanskrit</button>
+		<ul id="sanskrit-lang" class="list-unstyled collapse second accordion" data-bs-parent="#alllanguages">
 			<li class="text-type">
 				<a href="#" class="d-inline-flex btn"  data-bs-toggle="collapse" data-bs-target="#san-vin" aria-expanded="false">
 					<translation>Monastic Law</translation>
 					<root>Vinaya</root>
 				</a>
 
-				<ul class="list-unstyled collapse third" id="san-vin">
+				<ul class="list-unstyled collapse third  accordion-button" data-bs-parent="#sanskrit-lang" id="san-vin">
 					<li class="text-group">
 						<a href="#" class="expander"  data-bs-toggle="collapse" data-bs-target="#san-mg-vin" aria-expanded="false">            
 							<title>expand</title>+
@@ -2808,7 +2808,7 @@
 								<blurb>The Monastic Law for the Mahāsaṁghika school in Sanskrit. This school originally flourished in the area of Magadha in India and is now extinct. It was created during the first schism, and therefore its Vinaya has some unique features not found in other schools. Only the Bhikkhu-pātimokkha has been preserved in Sanskrit.</blurb>
 							</span>
 						</a>							
-						<ul class="list-unstyled collapse third" id="san-mg-vin">
+						<ul class="list-unstyled collapse third accordion-button" data-bs-parent="#sanskrit-lang" id="san-mg-vin">
 							<li class="text-type">
 								<a href="https://suttacentral.net/san-mg-bu-pm" class="btn d-inline-flex">
 									<chapterid>san-mg-bu-pm</chapterid>
@@ -3098,7 +3098,7 @@
 					<root>Abhidhamma</root>
 					<blurb>Abhidhamma texts are systematic summaries and analyses of the teachings drawn from the earlier discourses. The Abhidhamma (spelled abhidharma in Sanskrit) is intended for advanced students who have mastered the teachings of the discourses.</blurb>
 				</a>
-				<ul  id="san-ab" class="collapse  third list-unstyled">
+				<ul  id="san-ab" class="collapse  third list-unstyled  accordion-button" data-bs-parent="#sanskrit-lang">
 					<li>
 						<a href="https://suttacentral.net/san-sarv-ab" class="d-inline-flex btn">
 							<chapterid>san-sarv-ab</chapterid>
@@ -3117,15 +3117,15 @@
 
 		<!-- end sanskrit -->			
 		<li class="text-language accordion-item">
-			<button class="btn d-inline-flex align-items-left collapsed accordion-button" data-bs-toggle="collapse" data-bs-target="#otherlang" aria-expanded="false">Other Languages</button>
+			<button class="btn d-inline-flex align-items-left collapsed accordion-button" data-bs-toggle="collapse" data-bs-target="#other-lang" aria-expanded="false">Other Languages</button>
 
-			<ul id="otherlang"  class="list-unstyled second accordion-collapse collapse ">
+			<ul id="other-lang"  class="list-unstyled second accordion-collapse collapse ">
 				<li class="text-type sutta otherlang"><a href="#" class="d-inline-flex btn"  data-bs-toggle="collapse" data-bs-target="#other-discourses" aria-expanded="false">
 					<translation>Discourses</translation>
 					<root>Sūtra</root>
 				</a>
 
-				<ul id="other-discourses" class="collapse third list-unstyled" >
+				<ul id="other-discourses" class="collapse third list-unstyled  accordion-button" data-bs-parent="#other-lang" >
 					<li class="text-group">
 						<a href="https://suttacentral.net/do" class="btn d-inline-flex">
 							<chapterid>DO</chapterid>
@@ -3146,7 +3146,7 @@
 					<a href="#" class="d-inline-flex btn"  data-bs-toggle="collapse" data-bs-target="#ot-vin" aria-expanded="false">
 						<translation>Monastic Law</translation>
 						<root>Vinaya</root></a>
-						<ul  id="ot-vin" class="collapse  third  list-unstyled">
+						<ul  id="ot-vin" class="collapse  third  list-unstyled  accordion-button" data-bs-parent="#other-lang">
 							
 
 							<li class="text-group">
