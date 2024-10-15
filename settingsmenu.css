@@ -1,0 +1,27 @@
+#setting_menu section{
+		display: inline-block;
+		width: 300px;
+}
+
+
+#setting_menu section{
+	 position: absolute;
+	display: block;
+	width: 300px;
+	right: 0;
+	margin-top: 4px;
+	overflow-y: auto;
+	max-height: 90vh;
+}
+
+#setting_menu section summary{
+	background-color: var(--sc-border-color);
+}
+
+#setting_menu section summary:after{
+	content: ;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}}
